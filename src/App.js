@@ -16,6 +16,7 @@ class App extends Component {
   
         <Header />
         <Dashboard />
+        <p>HI</p>
         
       </div>
     );
