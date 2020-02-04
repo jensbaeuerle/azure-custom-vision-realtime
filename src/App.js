@@ -6,7 +6,9 @@ import './App.css';
 import Header from './components/layout/header';
 import Dashboard from './components/layout/dashboard';
 // import { Router } from 'react-router-dom';
+
 require('dotenv').config({ path: '../.env' })
+
 class App extends Component {
   render(){
     return (
