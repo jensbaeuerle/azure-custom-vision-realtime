@@ -36,7 +36,7 @@ class Dashboard extends Component {
     // //   },
     // //   headers: {
         // 'Content-Type': 'application/json',
-        // 'Prediction-Key': 'd8c83231606649a5b7e157f80ac0c474'
+        // 'Prediction-Key': process.env.REACT_APP_PREDICTION_API
     // //   }
     // // })
     // // // .then(res => this.setState({todos: JSON.stringify(res.data)}))
@@ -78,7 +78,7 @@ axios({
     method: 'POST',
     headers:{
         'Content-Type': 'multipart/form-data',
-        'Prediction-Key': 'd8c83231606649a5b7e157f80ac0c474'
+        'Prediction-Key': process.env.REACT_APP_PREDICTION_API
     },
     data: formdata
 }).then((res)=>{
