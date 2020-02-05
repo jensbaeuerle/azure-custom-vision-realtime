@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 
+
 import Header from './components/layout/header';
 import Dashboard from './components/layout/dashboard';
 // import { Router } from 'react-router-dom';
@@ -16,7 +17,7 @@ class App extends Component {
   
         <Header />
         <Dashboard />
-        <p>HI</p>
+        
         
       </div>
     );
