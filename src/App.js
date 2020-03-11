@@ -3,9 +3,14 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-
 import Header from './components/layout/header';
-import Dashboard from './components/layout/dashboard';
+import Footer from './components/layout/footer';
+
+import CustomVision from './components/CustomVision';
+
+// import CustomVision from './components/custom-vision';
+
+
 // import { Router } from 'react-router-dom';
 
 require('dotenv').config({ path: '../.env' })
@@ -14,11 +19,11 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-  
+
         <Header />
-        <Dashboard />
-        
-        
+        <CustomVision/>
+        {/* <Footer /> */}
+
       </div>
     );
   }
