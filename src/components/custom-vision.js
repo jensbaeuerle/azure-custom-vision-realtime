@@ -33,6 +33,9 @@ let file = this.state.file
 let formdata = new FormData()
 
 formdata.append('image',file)
+console.log("Hallo")
+
+
 
 axios({
     url: 'https://westeurope.api.cognitive.microsoft.com/customvision/v3.0/Prediction/74544207-bf9b-44fc-be36-3de9330e276f/detect/iterations/Iteration1/image',
@@ -47,6 +50,8 @@ axios({
 
 this.setState({pred: res.data.predictions})
 console.log(res.data.predictions)
+
+
 
 })
 }

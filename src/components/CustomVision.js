@@ -51,7 +51,7 @@ useEffect(() => {
       method: 'POST',
       headers:{
           'Content-Type': 'multipart/form-data',
-          'Prediction-Key': process.env.REACT_APP_PREDICTION_API
+          // 'Prediction-Key': process.env.REACT_APP_PREDICTION_API
           // 'Prediction-Key': process.env.REACT_APP_PREDICTION_API
           
       },
@@ -59,8 +59,8 @@ useEffect(() => {
   }).then((res)=>{
   
   
-  setPred({pred: res.data.predictions})
-  console.log(res.data.predictions)
+  setPred({pred: res.data})
+  console.log(res.data)
   
   })
 }, [formData])
@@ -86,14 +86,14 @@ const handleFile = e => {
 const handleUpload = () => {
 
     let file = img.file
+    console.log(file)
     
     let formdata = new FormData()
     
     formdata.append('image',file)
 
-    console.log(formData)
-
     setformData(formdata)
+
 
     }
     
